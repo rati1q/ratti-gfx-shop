@@ -25,6 +25,60 @@ body {
     padding: 40px 20px;
     background-color: #181818;
   }
+
+  .cards{
+    animation: slideInRight 1s ease-out forwards;
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cardi{
+    animation: slideInRight 2s ease-out forwards;
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carda{
+    animation: slideInRight 3s ease-out forwards;
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .oni{
+    background-image: url(assets/nice\ 1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+  }
+
+  .ona {
+    background-image: url(assets/okniceboy.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+  }
+
+  .one{
+    background-image: url(assets/ata.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+  }
   
   .pricing h2 {
     font-size: 2em;
@@ -38,6 +92,8 @@ body {
     max-width: 300px;
     border-radius: 10px;
     border: 1px solid #333;
+    width: 250px;
+    height: 150px;
   }
   
   .card h3 {
@@ -67,5 +123,21 @@ body {
     padding: 10px;
     font-size: 0.9em;
     color: #777;
+  }
+
+  
+  .title{
+    color: rgb(0, 211, 0);
+  }
+
+  @keyframes slideInRight {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
   
